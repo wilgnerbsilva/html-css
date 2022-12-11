@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
 
@@ -19,6 +19,12 @@
                 BACKGROUND-SIZE: COVER;
 
                 o método vai depender do que você quer fazer
+
+                ----------------||---------------
+                Caso queira usar a barra de rolagem é chamado de "VÍNCULO" e no inglês é attachment o padrão é scroll quando rola o conteúdo, o fundo também;
+                E o "FIXED" mantém o fundo travado 
+                BACKGROUND-ATTACHMENT: FIXED;
+                     
             */
 
             height: 98vh;
@@ -28,11 +34,21 @@
             background-position: center top;
             background-repeat: repeat-y;
             background-size: cover;
+            background-attachment: scroll;
+
+            /* 
+            Ordem dos background
+
+            Shorthand - background
+                 color > image > position > repeat > [size] > attachment
+            */
+
+            background: black url("imagens/wallpaper002.jpg") center center no-repeat cover fixed;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
