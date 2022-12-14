@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+            position: relative;
+            height: 93vh;
+            padding: 10px;
+            background-color: blueviolet;
+        }
+
+        #conteudo {
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            /* margin: auto;  Só serve para os elementos horizontal*/
+            
+            
+            left: 50%;  /* Usado para centralizar a caixa amarela */
+            top: 50%;   /* Tanto o top como left pegou o canto superior esquerdo para alinhar ao ponto central*/
+
+            transform: translate(-50%, -50%); /* Voltou -50% para a esquerda e -50% para cima*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
