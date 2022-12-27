@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+#tprincipal {
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    
+}
+
+h3 {
+    color: white;
+}
+
+#imagem {
+    background-image: url("imagens/background001.jpg");
+}
