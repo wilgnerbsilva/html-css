@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: repeat-y;
-            background-size: cover; /*Contain - Exibe 100% da imagem, porém quando diminuimos a janela, fica com a parte preta em baixo;
+            background-repeat: no-repeat;
+            background-size: cover; *//*Contain - Exibe 100% da imagem, porém quando diminuimos a janela, fica com a parte preta em baixo;
             cover - Vai mostrar a imagem, cobrir a tela inteira, mesmo que tenha que picotar a imagem*/
+            background-attachment: fixed; /* scroll - A imagem rola junto com a página
+            fixed - O fundo fica parado mesmo usando o scroll */ 
+            
+            /* Shorthand - background
+                color > image > position > repeat > [size] > attachment  - - Shorthand funciona, mas sem o size*/
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat  fixed;
+            background-size: cover;
         }
+
 
         main {
             background-color: white;
