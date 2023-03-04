@@ -6,7 +6,7 @@
 }
 
 html, body {
-    min-height: 100vh;
+    min-height: 100vh; /* Tamanho mínimo do corpo do html*/
     background-color: darkgray;
 }
 
@@ -18,28 +18,28 @@ header {
 
 header > h1 {
     padding-top: 50px;
-    font-variant: small-caps; /* A primeira letra é maiúscula */
+    font-variant: small-caps; /* Continua tendo as letras maiúsculas, mas a primeira letra de cada palavra maior*/
 }
 
 header > p {
     padding-bottom: 50px;
 }
 
-header a, footer a {
-    color: white; /* Cor branco no link*/
-    text-decoration: none; /* Tira o sublinhado do título */
-    font-weight: bolder; /* Deixa o link em negrito */
+header a,footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
-header a:hover, footer a:hover { /* Quando passar o ponteiro por cima do link ficará em sublinhado */
-    text-decoration: underline;
+header a:hover, footer a:hover {
+    text-decoration: underline ;
 }
 
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
     padding-left: 30px;
+    line-height: 2em;
 }
 
 section.normal {
@@ -48,14 +48,14 @@ section.normal {
 }
 
 section.imagem {
-    background-color: rgb(68, 68, 68);
+    background-color: rgb(51, 51, 51);
     color: white;
-    
+
 }
 
 section.imagem > p {
     width: 400px;
-    background-color: rgba(0, 0, 0, 0.623);
+    background-color: #292929;
 }
 
 footer {
