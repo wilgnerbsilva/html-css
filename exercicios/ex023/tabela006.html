@@ -30,6 +30,17 @@
             overflow-x: auto;
         }
 
+        .destaque{
+            background-color: red;
+        }
+
+        col.cfev {
+            background-color: chartreuse;
+        }
+
+        col.cjan {
+            background-color: yellow;
+        }
     </style>
 </head>
 <body>
@@ -38,11 +49,16 @@
     <div id="container">
         <table>
             <colgroup>
-                <col class="col1">
+                <col class="cjan">
+                <col class="cfev" span="2">
+                <col class="cmar">
+                <col class="cabr">
             </colgroup>
+
             <thead>
                 <tr>
                     <th scope="colgroup">Produto</th>
+                    <th>Jan</th>
                     <th>Jan</th>
                     <th>Fev</th>
                     <th>Mar</th>

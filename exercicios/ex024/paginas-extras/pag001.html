@@ -16,6 +16,14 @@
             
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: cornflowerblue;
+            color: white;
+        }
+
         th, td {
             border: 1px solid black;
             padding: 15px;
@@ -30,18 +38,24 @@
             overflow-x: auto;  
         }
 
+        .row1 {
+            background-color: aqua;
+        }
+
     </style>
 </head>
 <body>
     <div id="container">
         <table>
-            <colgroup>
-                <col class="col1">
-            </colgroup>
+            <caption>
+                Vendas de produtos por mês
+            </caption>
+
+
             <thead>
                 <tr>
-                    <th scope="colgroup">Produto</th>
-                    <th>Jan</th>
+                    <th scope="col">Produto</th>
+                    <th scope="row">Jan</th>
                     <th>Fev</th>
                     <th>Mar</th>
                     <th>Abr</th>
